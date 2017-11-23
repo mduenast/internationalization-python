@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from tennis import TennisGame1, TennisGame2, TennisGame3
+from cat.udl.tennis.tennis import TennisGame1, TennisGame2, TennisGame3
 
-from tennis_unittest import test_cases, play_game
+from cat.udl.tennis.tennis_unittest import test_cases, play_game
 
 class TestTennis:
 
