@@ -1,23 +1,12 @@
 # -*- coding: utf-8 -*-
-from ScoreMessage import ScoreMessage
-
 from cat.udl.tennis.Player import Player
+from cat.udl.tennis.ScoreMessage import ScoreMessage
 
 
 class TennisGame:
     def __init__(self, player1Name="player 1", player2Name="player 2"):
-        """self.player1Name = player1Name
-        self.player2Name = player2Name
-        self.p1points = 0
-        self.p2points = 0"""
         self.player1 = Player(player1Name)
         self.player2 = Player(player2Name)
-
-    """def won_point(self, playerName):
-        if playerName == self.player1Name:
-            self.p1points += 1
-        else:
-            self.p2points += 1"""
 
     def player1WonPoint(self):
         self.player1.score.value += 1
@@ -27,12 +16,7 @@ class TennisGame:
 
     def score(self):
         result = ""
-        """if (self.p1points == self.p2points):
-            result = {
-                0: "Love-All",
-                1: "Fifteen-All",
-                2: "Thirty-All",
-            }.get(self.p1points, "Deuce")"""
+
         if self.areScoresEquals(self.player1, self.player2):
             result = self.playdownPhase()
         elif self.isScoreGreatterOrEqualThanFour(self.player1.score) \
@@ -87,19 +71,6 @@ class TennisGame:
 
     def normalPhase(self):
 
-        """ for i in range(1, 3):
-                if (i == 1):
-                    tempScore = self.p1points
-                else:
-                    result += "-"
-                    tempScore = self.p2points
-                result += {
-                    0: "Love",
-                    1: "Fifteen",
-                    2: "Thirty",
-                    3: "Forty",
-                }[tempScore]
-                """
         result = "{0}-{1}".format(self.getScoreMessageByScore(self.player1),
                                   self.getScoreMessageByScore(self.player2)
                                   )
