@@ -4,7 +4,7 @@ from cat.udl.tennis.ScoreMessage import ScoreMessage
 
 
 class TennisGame:
-    def __init__(self, player1Name, player2Name):
+    def __init__(self, player1Name="player 1", player2Name="player 2"):
         """self.player1Name = player1Name
         self.player2Name = player2Name
         self.p1points = 0
