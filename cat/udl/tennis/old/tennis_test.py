@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from cat.udl.tennis.old.tennis import TennisGame1, TennisGame2, TennisGame3
 
+from cat.udl.tennis.old.tennis import TennisGame1, TennisGame2, TennisGame3
 from cat.udl.tennis.tennis_unittest import test_cases, play_game
 
 

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
+from ScoreMessage import ScoreMessage
+
 from cat.udl.tennis.Player import Player
-from cat.udl.tennis.ScoreMessage import ScoreMessage
 
 
 class TennisGame:

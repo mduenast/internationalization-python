@@ -1,9 +1,15 @@
-from gettext import gettext as _, translation
+import gettext
+import locale
+import os
+from gettext import gettext as _
 
-lang_en = translation('bundle', 'locales', languages=['en'])
-lang_es = translation('bundle', 'locales', languages=['es'])
+import sys
 
-lang_es.install()
+appdir = os.path.dirname(sys.argv[0])
+appdir = os.path.abspath(appdir)
+localedir = os.path.join(appdir, "locales")
+
+gettext.install('bundle', localedir, "utf-8")
 
 
 class ScoreMessage(object):

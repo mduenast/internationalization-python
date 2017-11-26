@@ -3,6 +3,7 @@
 import unittest
 
 from cat.udl.tennis.tennis import TennisGame
+
 test_cases = [
     (0, 0, "Love-All", 'player1', 'player2'),
     (1, 1, "Fifteen-All", 'player1', 'player2'),

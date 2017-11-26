@@ -1,12 +1,18 @@
 import gettext
+import locale
+import os
+import sys
+from gettext import gettext as _
 
 from cat.udl.tennis.tennis import TennisGame
-from gettext import gettext as _, translation
 
-lang_en = translation('bundle', 'locales', languages=['en'])
-lang_es = translation('bundle', 'locales', languages=['es'])
+appdir = os.path.dirname(sys.argv[0])
+appdir = os.path.abspath(appdir)
+localedir = os.path.join(appdir, "locales")
 
-lang_es.install()
+
+gettext.install('bundle', localedir, "utf-8")
+
 
 class Match(object):
     def __init__(self):
