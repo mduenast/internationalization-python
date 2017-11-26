@@ -3,7 +3,6 @@
 import unittest
 
 from cat.udl.tennis.tennis import TennisGame
-
 test_cases = [
     (0, 0, "Love-All", 'player1', 'player2'),
     (1, 1, "Fifteen-All", 'player1', 'player2'),
@@ -49,26 +48,26 @@ test_cases = [
     (6, 5, 'Advantage One', 'One', 'player2'),
     (5, 6, 'Advantage Two', 'player1', 'Two'),
 
-]
+    ]
 
-
-def play_game(TennisGame, p1Points, p2Points, p1Name, p2Name):
+def play_game(p1Points, p2Points, p1Name, p2Name):
     game = TennisGame(p1Name, p2Name)
     for i in range(max(p1Points, p2Points)):
         if i < p1Points:
-            game.won_point(p1Name)
+            game.player1WonPoint()
         if i < p2Points:
-            game.won_point(p2Name)
+            game.player2WonPoint()
     return game
 
-
 class TestTennis(unittest.TestCase):
+
     def test_Score_Game(self):
         for testcase in test_cases:
             (p1Points, p2Points, score, p1Name, p2Name) = testcase
-            game = play_game(TennisGame, p1Points, p2Points, p1Name, p2Name)
+            game = play_game(p1Points, p2Points, p1Name, p2Name)
+            print("current : {0} , expected : {1}".format(game.score(),score),score == game.score())
             self.assertEqual(score, game.score())
-
+            game.resetScore()
 
 if __name__ == "__main__":
     unittest.main()
