@@ -1,13 +1,21 @@
+from gettext import gettext as _, translation
+
+lang_en = translation('bundle', 'locales', languages=['en'])
+lang_es = translation('bundle', 'locales', languages=['es'])
+
+lang_es.install()
+
+
 class ScoreMessage(object):
-    LOVE_ALL = "Love-All"
-    FIFTEEN_ALL = "Fifteen-All"
-    THIRTY_ALL = "Thirty-All"
-    DEUCE = "Deuce"
+    LOVE_ALL = _("Love-All")
+    FIFTEEN_ALL = _("Fifteen-All")
+    THIRTY_ALL = _("Thirty-All")
+    DEUCE = _("Deuce")
 
-    ADVANTAGE = "Advantage "
-    WIN_FOR = "Win for "
+    ADVANTAGE = _("Advantage ")
+    WIN_FOR = _("Win for ")
 
-    LOVE = "Love"
-    FIFTEEN = "Fifteen"
-    THIRTY = "Thirty"
-    FORTY = "Forty"
+    LOVE = _("Love")
+    FIFTEEN = _("Fifteen")
+    THIRTY = _("Thirty")
+    FORTY = _("Forty")

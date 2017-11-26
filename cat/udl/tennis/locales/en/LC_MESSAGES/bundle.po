@@ -1,0 +1,78 @@
+# English translations for PACKAGE package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# U-NALUEM\naluem <mdt3@alumnes.udl.cat>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-26 19:23+0100\n"
+"PO-Revision-Date: 2017-11-26 19:25+0100\n"
+"Last-Translator: U-NALUEM\\naluem <mdt3@alumnes.udl.cat>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Match.py:14
+msgid "Welcome to mytennis"
+msgstr "Welcome to mytennis"
+
+#: Match.py:15
+msgid "Player 1 name :"
+msgstr "Player 1 name :"
+
+#: Match.py:17
+msgid "Player 2 name :"
+msgstr "Player 2 name :"
+
+#: Match.py:20
+msgid "Who scores ?"
+msgstr "Who scores ?"
+
+#: Match.py:31
+msgid "End of match"
+msgstr "End of match"
+
+#: ScoreMessage.py:11
+msgid "Love-All"
+msgstr "Love-All"
+
+#: ScoreMessage.py:12
+msgid "Fifteen-All"
+msgstr "Fifteen-All"
+
+#: ScoreMessage.py:13
+msgid "Thirty-All"
+msgstr "Thirty-All"
+
+#: ScoreMessage.py:14
+msgid "Deuce"
+msgstr "Deuce"
+
+#: ScoreMessage.py:16
+msgid "Advantage "
+msgstr "Advantage "
+
+#: ScoreMessage.py:17
+msgid "Win for "
+msgstr "Win for "
+
+#: ScoreMessage.py:19
+msgid "Love"
+msgstr "Love"
+
+#: ScoreMessage.py:20
+msgid "Fifteen"
+msgstr "Fifteen"
+
+#: ScoreMessage.py:21
+msgid "Thirty"
+msgstr "Thirty"
+
+#: ScoreMessage.py:22
+msgid "Forty"
+msgstr "Forty"
