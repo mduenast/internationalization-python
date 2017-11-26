@@ -5,7 +5,7 @@ from gettext import gettext as _
 
 from cat.udl.tennis.tennis import TennisGame
 
-appdir = os.path.dirname(sys.argv[0])
+appdir = os.path.dirname("cat/udl/tennis/" + sys.argv[0])
 appdir = os.path.abspath(appdir)
 localedir = os.path.join(appdir, "locales")
 
