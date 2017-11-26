@@ -1,9 +1,7 @@
 import gettext
-import locale
 import os
-from gettext import gettext as _
-
 import sys
+from gettext import gettext as _
 
 appdir = os.path.dirname(sys.argv[0])
 appdir = os.path.abspath(appdir)

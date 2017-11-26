@@ -49,7 +49,8 @@ test_cases = [
     (6, 5, 'Advantage One', 'One', 'player2'),
     (5, 6, 'Advantage Two', 'player1', 'Two'),
 
-    ]
+]
+
 
 def play_game(p1Points, p2Points, p1Name, p2Name):
     game = TennisGame(p1Name, p2Name)
@@ -60,15 +61,16 @@ def play_game(p1Points, p2Points, p1Name, p2Name):
             game.player2WonPoint()
     return game
 
-class TestTennis(unittest.TestCase):
 
+class TestTennis(unittest.TestCase):
     def test_Score_Game(self):
         for testcase in test_cases:
             (p1Points, p2Points, score, p1Name, p2Name) = testcase
             game = play_game(p1Points, p2Points, p1Name, p2Name)
-            print("current : {0} , expected : {1}".format(game.score(),score),score == game.score())
+            print("current : {0} , expected : {1}".format(game.score(), score), score == game.score())
             self.assertEqual(score, game.score())
             game.resetScore()
+
 
 if __name__ == "__main__":
     unittest.main()
